@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7161E2412F8295630042697B /* PLAN.md in Resources */ = {isa = PBXBuildFile; fileRef = 7161E2402F8295630042697B /* PLAN.md */; };
+		7161E2432F8297760042697B /* UniversalControlService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7161E2422F8297760042697B /* UniversalControlService.swift */; };
+		7161E2452F8298650042697B /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7161E2442F8298650042697B /* AppSettings.swift */; };
+		7161E2472F82986D0042697B /* GlobalHotkeyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7161E2462F82986D0042697B /* GlobalHotkeyManager.swift */; };
+		7161E2492F8298870042697B /* MenuBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7161E2482F8298870042697B /* MenuBarController.swift */; };
+		7161E24B2F82988B0042697B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7161E24A2F82988B0042697B /* AppDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7161E2222F82921C0042697B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7161E20C2F82921B0042697B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7161E2132F82921B0042697B;
+			remoteInfo = EdgeGuard;
+		};
+		7161E22C2F82921C0042697B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7161E20C2F82921B0042697B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7161E2132F82921B0042697B;
+			remoteInfo = EdgeGuard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7161E2142F82921B0042697B /* EdgeGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdgeGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7161E2212F82921C0042697B /* EdgeGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdgeGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7161E22B2F82921C0042697B /* EdgeGuardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdgeGuardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7161E23E2F82937D0042697B /* SPEC.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SPEC.md; sourceTree = "<group>"; };
+		7161E2402F8295630042697B /* PLAN.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PLAN.md; sourceTree = "<group>"; };
+		7161E2422F8297760042697B /* UniversalControlService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalControlService.swift; sourceTree = "<group>"; };
+		7161E2442F8298650042697B /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		7161E2462F82986D0042697B /* GlobalHotkeyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalHotkeyManager.swift; sourceTree = "<group>"; };
+		7161E2482F8298870042697B /* MenuBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarController.swift; sourceTree = "<group>"; };
+		7161E24A2F82988B0042697B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7161E2162F82921B0042697B /* EdgeGuard */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EdgeGuard;
+			sourceTree = "<group>";
+		};
+		7161E2242F82921C0042697B /* EdgeGuardTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EdgeGuardTests;
+			sourceTree = "<group>";
+		};
+		7161E22E2F82921C0042697B /* EdgeGuardUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EdgeGuardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7161E2112F82921B0042697B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7161E21E2F82921C0042697B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7161E2282F82921C0042697B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7161E20B2F82921B0042697B = {
+			isa = PBXGroup;
+			children = (
+				7161E2162F82921B0042697B /* EdgeGuard */,
+				7161E2242F82921C0042697B /* EdgeGuardTests */,
+				7161E22E2F82921C0042697B /* EdgeGuardUITests */,
+				7161E2152F82921B0042697B /* Products */,
+				7161E2402F8295630042697B /* PLAN.md */,
+				7161E23E2F82937D0042697B /* SPEC.md */,
+				7161E2422F8297760042697B /* UniversalControlService.swift */,
+				7161E2442F8298650042697B /* AppSettings.swift */,
+				7161E2462F82986D0042697B /* GlobalHotkeyManager.swift */,
+				7161E2482F8298870042697B /* MenuBarController.swift */,
+				7161E24A2F82988B0042697B /* AppDelegate.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		7161E2152F82921B0042697B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7161E2142F82921B0042697B /* EdgeGuard.app */,
+				7161E2212F82921C0042697B /* EdgeGuardTests.xctest */,
+				7161E22B2F82921C0042697B /* EdgeGuardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7161E2132F82921B0042697B /* EdgeGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7161E2352F82921C0042697B /* Build configuration list for PBXNativeTarget "EdgeGuard" */;
+			buildPhases = (
+				7161E2102F82921B0042697B /* Sources */,
+				7161E2112F82921B0042697B /* Frameworks */,
+				7161E2122F82921B0042697B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7161E2162F82921B0042697B /* EdgeGuard */,
+			);
+			name = EdgeGuard;
+			packageProductDependencies = (
+			);
+			productName = EdgeGuard;
+			productReference = 7161E2142F82921B0042697B /* EdgeGuard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7161E2202F82921C0042697B /* EdgeGuardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7161E2382F82921C0042697B /* Build configuration list for PBXNativeTarget "EdgeGuardTests" */;
+			buildPhases = (
+				7161E21D2F82921C0042697B /* Sources */,
+				7161E21E2F82921C0042697B /* Frameworks */,
+				7161E21F2F82921C0042697B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7161E2232F82921C0042697B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7161E2242F82921C0042697B /* EdgeGuardTests */,
+			);
+			name = EdgeGuardTests;
+			packageProductDependencies = (
+			);
+			productName = EdgeGuardTests;
+			productReference = 7161E2212F82921C0042697B /* EdgeGuardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7161E22A2F82921C0042697B /* EdgeGuardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7161E23B2F82921C0042697B /* Build configuration list for PBXNativeTarget "EdgeGuardUITests" */;
+			buildPhases = (
+				7161E2272F82921C0042697B /* Sources */,
+				7161E2282F82921C0042697B /* Frameworks */,
+				7161E2292F82921C0042697B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7161E22D2F82921C0042697B /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7161E22E2F82921C0042697B /* EdgeGuardUITests */,
+			);
+			name = EdgeGuardUITests;
+			packageProductDependencies = (
+			);
+			productName = EdgeGuardUITests;
+			productReference = 7161E22B2F82921C0042697B /* EdgeGuardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7161E20C2F82921B0042697B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					7161E2132F82921B0042697B = {
+						CreatedOnToolsVersion = 26.4;
+					};
+					7161E2202F82921C0042697B = {
+						CreatedOnToolsVersion = 26.4;
+						TestTargetID = 7161E2132F82921B0042697B;
+					};
+					7161E22A2F82921C0042697B = {
+						CreatedOnToolsVersion = 26.4;
+						TestTargetID = 7161E2132F82921B0042697B;
+					};
+				};
+			};
+			buildConfigurationList = 7161E20F2F82921B0042697B /* Build configuration list for PBXProject "EdgeGuard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7161E20B2F82921B0042697B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 7161E2152F82921B0042697B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7161E2132F82921B0042697B /* EdgeGuard */,
+				7161E2202F82921C0042697B /* EdgeGuardTests */,
+				7161E22A2F82921C0042697B /* EdgeGuardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7161E2122F82921B0042697B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7161E2412F8295630042697B /* PLAN.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7161E21F2F82921C0042697B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7161E2292F82921C0042697B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7161E2102F82921B0042697B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7161E2472F82986D0042697B /* GlobalHotkeyManager.swift in Sources */,
+				7161E2432F8297760042697B /* UniversalControlService.swift in Sources */,
+				7161E2452F8298650042697B /* AppSettings.swift in Sources */,
+				7161E24B2F82988B0042697B /* AppDelegate.swift in Sources */,
+				7161E2492F8298870042697B /* MenuBarController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7161E21D2F82921C0042697B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7161E2272F82921C0042697B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7161E2232F82921C0042697B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7161E2132F82921B0042697B /* EdgeGuard */;
+			targetProxy = 7161E2222F82921C0042697B /* PBXContainerItemProxy */;
+		};
+		7161E22D2F82921C0042697B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7161E2132F82921B0042697B /* EdgeGuard */;
+			targetProxy = 7161E22C2F82921C0042697B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7161E2332F82921C0042697B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = YNT6PGUJ53;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7161E2342F82921C0042697B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = YNT6PGUJ53;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		7161E2362F82921C0042697B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YNT6PGUJ53;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAccessoryTrackingUsageDescription = " Edge​Guard uses ​Accessibility to register a global keyboard shortcut (​Cmd​+​Opt​+​Ctrl​+​X) for quickly toggling ​Universal ​Control.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = blc.EdgeGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		7161E2372F82921C0042697B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YNT6PGUJ53;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAccessoryTrackingUsageDescription = " Edge​Guard uses ​Accessibility to register a global keyboard shortcut (​Cmd​+​Opt​+​Ctrl​+​X) for quickly toggling ​Universal ​Control.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = blc.EdgeGuard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		7161E2392F82921C0042697B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YNT6PGUJ53;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = blc.EdgeGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EdgeGuard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EdgeGuard";
+			};
+			name = Debug;
+		};
+		7161E23A2F82921C0042697B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YNT6PGUJ53;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = blc.EdgeGuardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EdgeGuard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EdgeGuard";
+			};
+			name = Release;
+		};
+		7161E23C2F82921C0042697B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YNT6PGUJ53;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = blc.EdgeGuardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TEST_TARGET_NAME = EdgeGuard;
+			};
+			name = Debug;
+		};
+		7161E23D2F82921C0042697B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = YNT6PGUJ53;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = blc.EdgeGuardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TEST_TARGET_NAME = EdgeGuard;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7161E20F2F82921B0042697B /* Build configuration list for PBXProject "EdgeGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7161E2332F82921C0042697B /* Debug */,
+				7161E2342F82921C0042697B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7161E2352F82921C0042697B /* Build configuration list for PBXNativeTarget "EdgeGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7161E2362F82921C0042697B /* Debug */,
+				7161E2372F82921C0042697B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7161E2382F82921C0042697B /* Build configuration list for PBXNativeTarget "EdgeGuardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7161E2392F82921C0042697B /* Debug */,
+				7161E23A2F82921C0042697B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7161E23B2F82921C0042697B /* Build configuration list for PBXNativeTarget "EdgeGuardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7161E23C2F82921C0042697B /* Debug */,
+				7161E23D2F82921C0042697B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7161E20C2F82921B0042697B /* Project object */;
+}
