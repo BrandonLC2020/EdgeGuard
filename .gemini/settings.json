@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "xcode-native": {
+      "command": "xcrun",
+      "args": [
+        "mcpbridge"
+      ]
+    }
+  }
+}
