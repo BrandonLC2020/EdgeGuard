@@ -12,6 +12,7 @@ final class MenuBarController: NSObject {
     // Strong references to items updated dynamically after menu is built
     private let ucItem: NSMenuItem
     private let magicEdgesItem: NSMenuItem
+    private let autoReconnectItem: NSMenuItem
     private let launchAtLoginItem: NSMenuItem
 
     override init() {
@@ -27,6 +28,11 @@ final class MenuBarController: NSObject {
             action: #selector(handleToggleMagicEdges),
             keyEquivalent: ""
         )
+        autoReconnectItem = NSMenuItem(
+            title: "Auto-Reconnect",
+            action: #selector(handleToggleAutoReconnect),
+            keyEquivalent: ""
+        )
         launchAtLoginItem = NSMenuItem(
             title: "Launch at Login",
             action: #selector(handleToggleLaunchAtLogin),
@@ -40,6 +46,7 @@ final class MenuBarController: NSObject {
         // Optimistic initial state (macOS ships with UC enabled)
         ucItem.state = .on
         magicEdgesItem.state = .on
+        autoReconnectItem.state = .on
         updateIcon(ucEnabled: true)
 
         // Load actual state asynchronously
@@ -54,10 +61,14 @@ final class MenuBarController: NSObject {
         ucItem.target = self
         menu.addItem(ucItem)
 
-        // Indented to visually indicate it's a sub-option of Universal Control
+        // Indented to visually indicate they're sub-options of Universal Control
         magicEdgesItem.target = self
         magicEdgesItem.indentationLevel = 1
         menu.addItem(magicEdgesItem)
+
+        autoReconnectItem.target = self
+        autoReconnectItem.indentationLevel = 1
+        menu.addItem(autoReconnectItem)
 
         menu.addItem(.separator())
 
@@ -103,6 +114,8 @@ final class MenuBarController: NSObject {
         ucItem.state = state.universalControlEnabled ? .on : .off
         magicEdgesItem.state = state.magicEdgesEnabled ? .on : .off
         magicEdgesItem.isEnabled = state.universalControlEnabled
+        autoReconnectItem.state = state.autoReconnectEnabled ? .on : .off
+        autoReconnectItem.isEnabled = state.universalControlEnabled
         updateIcon(ucEnabled: state.universalControlEnabled)
     }
 
@@ -151,6 +164,19 @@ final class MenuBarController: NSObject {
             do {
                 let current = try await service.fetchState()
                 try await service.setMagicEdgesEnabled(!current.magicEdgesEnabled)
+                let updated = try await service.fetchState()
+                updateMenuAndIcon(state: updated)
+            } catch {
+                showError(error)
+            }
+        }
+    }
+
+    @objc private func handleToggleAutoReconnect() {
+        Task {
+            do {
+                let current = try await service.fetchState()
+                try await service.setAutoReconnectEnabled(!current.autoReconnectEnabled)
                 let updated = try await service.fetchState()
                 updateMenuAndIcon(state: updated)
             } catch {
